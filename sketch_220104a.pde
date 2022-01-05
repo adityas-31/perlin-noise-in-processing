@@ -1,13 +1,13 @@
 int cols, rows;
 int scl = 20;
 int w = 2200;
-int h = 1020;
+int h = 1800;
 float flying = 0;
 
 float[][] terrain;
 
 void setup(){
-  size(600, 600, P3D);
+  size(1000, 600, P3D);
 
   cols = w/scl;
   rows = h/scl;
@@ -28,9 +28,9 @@ void draw(){
   yoff += 0.1;
   }
   
-  background(0);
-  stroke(255);
-  noFill();
+  background(0 ,0 , 250);
+  stroke(0 , 255, 0);
+  fill(0 , 100 , 0);
   translate(width/2, height/2);
   rotateX(PI/3);
   translate(-w/2, -h/2);
